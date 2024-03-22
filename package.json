@@ -1,0 +1,47 @@
+{
+  "name": "distinctioaut",
+  "version": "1.0.0",
+  "author": "HaleyWaelchi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DillanKling/distinctioaut.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "hic",
+    "decentralized",
+    "blockchain",
+    "aut",
+    "bridge"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.5",
+    "standard": "*"
+  },
+  "scripts": {
+    "standard": "standard",
+    "prettier-solidity": "prettier --list-different --plugin node_modules/prettier-plugin-solidity/ **/*.sol"
+  },
+  "standard": {
+    "ignore": [
+      "/contracts/eth/**/*.js"
+    ]
+  },
+  "workspaces": [
+    "cli",
+    "contracts/eth",
+    "contracts/near",
+    "eth2near/eth2near-block-relay",
+    "near2eth/near2eth-block-relay",
+    "near2eth/watchdog",
+    "testing",
+    "utils"
+  ],
+  "bugs": {
+    "url": "https://github.com/DillanKling/distinctioaut.git/issues"
+  },
+  "homepage": "https://github.com/DillanKling/distinctioaut.git"
+}
